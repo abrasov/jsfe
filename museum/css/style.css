@@ -1,0 +1,225 @@
+:root {
+  --bg-dark: #030303;
+  --bg-light: #fff;
+  --dark-red: #710707;
+  --font-color-light: #fff;
+  --font-color-gold: #9D8665;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+.header {
+  background-color: var(--bg-dark);
+}
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
+.logo {
+  padding: 0 10px 0 70px;
+  background-image: url('../assets/svg/logo.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-family: 'Forum', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  color: var(--font-color-light);
+  text-transform: uppercase;
+  cursor:default;
+}
+.nav {
+  max-width: 720px;
+  width: 100%;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 76px;
+}
+.nav__item {
+}
+.nav__link {
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: var(--font-color-light);
+  transition: all 0.3s;
+}
+.nav__link:hover,
+.nav__link:active {
+  color: var(--font-color-gold);
+}
+
+.main {
+}
+.section--dark {
+  color: var(--font-color-light);
+  background-color: #000;
+}
+.welcome-wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  height: 730px;
+  background: url(../assets/img/welcome-background.jpg) bottom right no-repeat;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-title {
+  padding: 90px 0 26px;
+  font-family: 'Forum', sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.section-title span {
+  display: block;
+}
+.subtitle {
+  padding-bottom: 100px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.welcome-link {
+  padding: 27px 70px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  background-color: var(--dark-red);
+  transition: all .3s;
+}
+.welcome-link:hover{
+  background-color: var(--font-color-gold);
+}
+
+.section--light {
+  background-color: var(--bg-light);
+  color: #000;
+}
+.section-title--gold {
+  padding-top: 75px;
+  color: var(--font-color-gold);
+}
+.section-title--gold::after {
+  content: '';
+  display: block;
+  margin: 28px 0 50px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--dark-red);
+}
+.tour__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tour__card {
+}
+.card {
+  margin-bottom: 70px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card:hover {
+  box-shadow: 0px 0px 50px var(--font-color-gold);
+}
+.card-image {
+  max-width: 440px;
+  width: 100%;
+}
+.card-title {
+  padding: 15px 0 11px;
+  font-family: 'Forum', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.card-title::after {
+  content: '';
+  display: block;
+  margin-top: 10px;
+  width: 300px;
+  height: 1px;
+  background-color: var(--dark-red);
+}
+.card-desc p{
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.explore {
+}
+.container--explore {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 75px 0;
+}
+.explore-desc {
+  width: 660px;
+}
+.section-title--dark {
+  padding-top: 0px;
+}
+.section-title--dark::after {
+  content: '';
+  display: block;
+  margin: 30px 0 75px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--dark-red);
+}
+.explore-text {
+  padding: 12.5px 0;
+  font-weight: 300;
+  line-height: 38.5px;
+}
+.explore-text span {
+  color: #CAAA7D;
+}
+.explore-img {
+  max-width: 720px;
+}
