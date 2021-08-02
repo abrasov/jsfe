@@ -1,6 +1,7 @@
 :root {
   --bg-dark: #030303;
   --bg-light: #fff;
+  --dark-red: #710707;
   --font-color-light: #fff;
   --font-color-gold: #9D8665;
 }
@@ -79,4 +80,53 @@ a {
 .nav__link:hover,
 .nav__link:active {
   color: var(--font-color-gold);
+}
+
+.main {
+}
+.welcome {
+  color: var(--font-color-light);
+  background-color: #000;
+}
+.welcome-wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  height: 750px;
+  background: url(../assets/img/welcome-background.jpg) bottom right no-repeat;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-title {
+  padding: 190px 0 26px;
+  font-family: 'Forum', sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.subtitle {
+  padding-bottom: 76px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.welcome-link {
+  padding: 27px 70px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  background-color: var(--dark-red);
+  transition: all .3s;
+}
+.welcome-link:hover{
+  background-color: var(--font-color-gold);
 }
