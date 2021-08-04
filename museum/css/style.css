@@ -351,6 +351,91 @@ input[type=range]::-webkit-slider-thumb {
 }
 .tickets__content {
   margin-top: -37px;
+  display: flex;
+  justify-content: flex-start;
+}
+.tickets__checks {
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket-type {
+  width: 270px;
+}
+.tickets-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+.radio-type {
+  margin-bottom: 50px;
+}
+.type-label {
+  margin-left: 23px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.type-label:hover {
+  color: var(--font-color-gold);
+}
+.amount {
+  margin-left: 215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+}
+.amount-label {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.amount-btns{
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: 3px solid #fff;
+  margin-bottom: 35px;
+}
+input[type=number] {
+  width: 100%;
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  color: #fff;
+  outline: none;
+}
+.btn-minus, .btn-plus {
+  font-size: 32px;
+  font-weight: 400;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  width: 18px;
+  height: 38px;
+}
+.price {
+  margin: 50px 0;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  letter-spacing: 1.65px;
+}
+.amount-btn {
+  width: 175px;
+  height: 50px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #000000;
 }
 
 .contacts {
