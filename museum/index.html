@@ -158,8 +158,39 @@
             </div>
             <div class="tickets__checks">
               <div class="ticket-type">
+                <h4 class="tickets-title">Ticket Type</h4>
+                <div class="radio-type">
+                  <input type="radio" id="permanent" name="ticket-type" checked>
+                  <label for="permanent" class="type-label">Permanent exhibition</label>
+                </div>
+                <div class="radio-type">
+                  <input type="radio" id="temporary" name="ticket-type">
+                  <label for="temporary" class="type-label">Temporary exhibition</label>
+                </div>
+                <div class="radio-type">
+                  <input type="radio" id="combined" name="ticket-type">
+                  <label for="combined" class="type-label">Combined Admission</label>
+                </div>
+              </div>
+              <div class="amount">
+                <h4 class="tickets-title">Amount</h4>
+                <label for="basic" class="amount-label">Basic 18+</label>
+                <div class="amount-btns">
+                  <button class="btn-minus">-</button>
+                  <input type="number" id="basic" name="basic" min="0" value="1" readonly>
+                  <button class="btn-plus">+</button>
+                </div>
+                <label for="senior" class="amount-label">Senior 65+</label>
+                <div class="amount-btns">
+                  <button class="btn-minus">-</button>
+                  <input type="number" id="senior" name="senior" min="0" value="1" readonly>
+                  <button class="btn-plus">+</button>
+                </div>
+                <p class="price">Total €220</p>
+                <button class="amount-btn">Buy Now</button>
               </div>
             </div>
+          </div>
           </div>
       </section>
 
