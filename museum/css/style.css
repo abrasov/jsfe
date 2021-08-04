@@ -67,8 +67,6 @@ a {
   align-items: center;
   gap: 76px;
 }
-.nav__item {
-}
 .nav__link {
   font-size: 22px;
   line-height: 50px;
@@ -81,11 +79,13 @@ a {
   color: var(--font-color-gold);
 }
 
-.main {
-}
 .section--dark {
   color: var(--font-color-light);
   background-color: #000;
+}
+.section--light {
+  background-color: var(--bg-light);
+  color: #000;
 }
 .welcome-wrapper {
   margin: 0 auto;
@@ -132,11 +132,6 @@ a {
 .welcome-link:hover{
   background-color: var(--font-color-gold);
 }
-
-.section--light {
-  background-color: var(--bg-light);
-  color: #000;
-}
 .section-title--gold {
   padding-top: 75px;
   color: var(--font-color-gold);
@@ -153,8 +148,6 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-.tour__card {
 }
 .card {
   margin-bottom: 70px;
@@ -184,6 +177,10 @@ a {
   width: 300px;
   height: 1px;
   background-color: var(--dark-red);
+  transition: all .4s;
+}
+.card:hover .card-title::after {
+  width: 100%;
 }
 .card-desc p{
   padding-top: 10px;
@@ -222,4 +219,115 @@ a {
 }
 .explore-img {
   max-width: 720px;
+}
+
+.video {
+}
+.video-back {
+  margin-top: 90px;
+  position: relative;
+  padding: 0;
+  background-color: #000;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  transition: all .2s;
+}
+.btn:hover {
+  filter: invert(65%) sepia(0%) saturate(380%) hue-rotate(242deg) brightness(95%) contrast(86%);
+  transform: scale(0.95);
+  cursor: pointer;
+}
+.btn:active {
+  filter: invert(50%) sepia(42%) saturate(300%) hue-rotate(356deg) brightness(99%) contrast(84%);
+  transform: scale(0.8);
+}
+.btn-play--big {
+  position: absolute;
+  top: 32%;
+  left: 42%;
+  width: 220px;
+  height: 220px;
+  background-image: url(../assets/svg/play-big.svg);
+}
+.video-controls {
+  height: 85px;
+  background-color: #000;
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-prev {
+  width: 27px;
+  height: 30px;
+  background-image: url(../assets/svg/arrow-prev.svg);
+}
+.btn-play {
+  width: 23px;
+  height: 30px;
+  background-image: url(../assets/svg/play.svg);
+}
+.btn-next {
+  width: 27px;
+  height: 30px;
+  background-image: url(../assets/svg/arrow-next.svg);
+}
+.btn-volume {
+  margin-left: 15px;
+  width: 37px;
+  height: 30px;
+  background-image: url(../assets/svg/volume.svg);
+}
+.btn-screen {
+  width: 36px;
+  height: 36px;
+  background-image: url(../assets/svg/fullscreen.svg);
+}
+input[type=range]{
+  -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  cursor: pointer;
+  height: 8px;
+  box-shadow: 0px 0px 0px #000000;
+  background: #c4c4c4;
+  background: linear-gradient(to right,#24809e 0%,#24809e 48%,#c4c4c4 0%,#c4c4c4 100%);
+}
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -4px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.video-progress {
+  width: 820px;
+}
+.volume-progress {
+  width: 155px;
+}
+.video-desc {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.video-title {
+  font-family: 'Forum', sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--font-color-gold);
+}
+.video-text {
+  margin-top: 5px;
+  width: 720px;
+  font-weight: 300;
+  line-height: 38px;
 }
