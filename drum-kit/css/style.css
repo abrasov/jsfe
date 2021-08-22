@@ -28,7 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  -webkit-user-select: none;
+  user-select: none;
 }
 .key {
   width: 100px;

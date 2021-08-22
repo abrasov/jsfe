@@ -33,6 +33,27 @@ const stopMouse = () => {
     key.removeEventListener('mouseout', stopSound)
   })
 }
+const handleKeyDown = (event) => {
+  if (event.repeat) return
+  const pressedKey = event.code.slice(-1)
+  keys.forEach((key) => {
+    if (key.dataset.letter === pressedKey) {
+      key.classList.add('key-active')
+      const letter = key.dataset.letter
+      const src = `assets/sounds/${letter}.wav`
+      playing(src)
+    }
+  })
+}
+
+const handleKeyUp = (event) => {
+  keys.forEach((key) => {
+    key.classList.remove('key-active')
+  })
+}
 
 document.addEventListener('mousedown', startMouse)
 document.addEventListener('mouseup', stopMouse)
+
+window.addEventListener('keydown', handleKeyDown)
+window.addEventListener('keyup', handleKeyUp)
