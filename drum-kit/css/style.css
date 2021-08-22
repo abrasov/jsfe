@@ -1,0 +1,61 @@
+:root {
+  --main-color: #333;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(../assets/images/drums-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #333;
+  font-size: 24px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.keys {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  user-select: none;
+}
+.key {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 10%;
+  background-color: #fff;
+  opacity: 0.6;
+  transition: all .3s;
+  cursor: pointer;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.7);
+}
+.key-active {
+  box-shadow: 10px 10px 21px 0px rgba(255, 255, 255, 0.7);
+  transform: scale(1.2);
+  border-color: #e21010;
+  opacity: 0.9;
+}
+kbd {
+  font-weight: 700;
+}
+.sound {
+  display: block;
+  font-size: 16px;
+  color: #e21010;
+}
