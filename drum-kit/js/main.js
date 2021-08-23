@@ -106,8 +106,29 @@ const stopMouseFun = () => {
     key.removeEventListener('mouseout', stopSoundFun)
   })
 }
+const handleKeyDownFun = (event) => {
+  if (event.repeat) return
+  const pressedKeyFun = event.code.slice(-1)
+  funKeys.forEach((key) => {
+    if (key.dataset.letter === pressedKeyFun) {
+      key.classList.add('fun-key--active')
+      const letter = key.dataset.letter
+      const src = `assets/sounds/${letter}.mp3`
+      playing(src)
+    }
+  })
+}
+const handleKeyUpFun = (event) => {
+  funKeys.forEach((key) => {
+    key.classList.remove('fun-key--active')
+  })
+}
+
 document.addEventListener('mousedown', startMouseFun)
 document.addEventListener('mouseup', stopMouseFun)
+window.addEventListener('keydown', handleKeyDownFun)
+window.addEventListener('keyup', handleKeyUpFun)
+
 
 
 
