@@ -2,51 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <title>Drum Kit</title>
 </head>
-<body>
-  <div class="keys">
-    <div class="key" data-letter="A">
-      <kbd>A</kbd>
-      <span class="sound">clap</span>
+<body class="page">
+  <header class="header">
+    <h1 class="title">JS30: Drum Kit</h1>
+    <div class="settings">
+      <button class=" settings-btn theme-button" type="button"></button>
+      <div class="settings-btn setting-btn--active drums-btn"></div>
+      <div class="settings-btn fun-btn"></div>
     </div>
-    <div class="key" data-letter="S">
-      <kbd>S</kbd>
-      <span class="sound">hi-hat</span>
-    </div>
-    <div class="key" data-letter="D">
-      <kbd>D</kbd>
-      <span class="sound">kick</span>
-    </div>
-    <div class="key" data-letter="F">
-      <kbd>F</kbd>
-      <span class="sound">openhat</span>
-    </div>
-    <div class="key" data-letter="G">
-      <kbd>G</kbd>
-      <span class="sound">boom</span>
-    </div>
-    <div class="key" data-letter="H">
-      <kbd>H</kbd>
-      <span class="sound">ride</span>
-    </div>
-    <div class="key" data-letter="J">
-      <kbd>J</kbd>
-      <span class="sound">share</span>
-    </div>
-    <div class="key" data-letter="K">
-      <kbd>K</kbd>
-      <span class="sound">tom</span>
-    </div>
-    <div class="key" data-letter="L">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-  </div>
+  </header>
 
+  <main class="main">
+    <div class="drums-content">
+      <div class="drums-panel">
+        <div class="drums-keys">
+          <div class="drums-key" data-name="clap" data-letter="A">A</div>
+          <div class="drums-key" data-name="hihat" data-letter="S">S</div>
+          <div class="drums-key" data-name="kick" data-letter="D">D</div>
+          <div class="drums-key" data-name="openhat" data-letter="F">F</div>
+          <div class="drums-key" data-name="boom" data-letter="G">G</div>
+          <div class="drums-key" data-name="ride" data-letter="H">H</div>
+          <div class="drums-key" data-name="share" data-letter="J">J</div>
+          <div class="drums-key" data-name="tom" data-letter="K">K</div>
+          <div class="drums-key" data-name="tink" data-letter="L">L</div>
+        </div>
+        <div class="drums-names">
+            <div class="drums-name">clap</div>
+            <div class="drums-name">hihat</div>
+            <div class="drums-name">kick</div>
+            <div class="drums-name">openhat</div>
+            <div class="drums-name">boom</div>
+            <div class="drums-name">ride</div>
+            <div class="drums-name">share</div>
+            <div class="drums-name">tom</div>
+            <div class="drums-name">tink</div>
+        </div>
+      </div>
+    </div>
+    <div class="fun-content hidden">
+      <div class="fun-panel">
+        <div class="fun-keys">
+          <div class="fun-key" data-letter="Q">Q</div>
+          <div class="fun-key" data-letter="W">W</div>
+          <div class="fun-key" data-letter="E">E</div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="./js/main.js"></script>
 </body>
 </html>
