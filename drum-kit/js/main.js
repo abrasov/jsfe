@@ -129,7 +129,14 @@ document.addEventListener('mouseup', stopMouseFun)
 window.addEventListener('keydown', handleKeyDownFun)
 window.addEventListener('keyup', handleKeyUpFun)
 
-
+console.log(`
+Общая оценка: 30
+Повторить исходный проект +10
+Обязательный дополнительный фукционал +10
+Дополнительный фукционал:
+Добавлена темная тема +10
+Добавлены фразы Fun mode +10
+`)
 
 
 
