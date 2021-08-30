@@ -9,7 +9,62 @@
   <title>JS30 - Photofilter</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <h1 class="title">JS30 - Photofilter</h1>
+        <div class="page-settings">
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <main class="main container">
+    <div class="main__inner">
+      <div class="settings">
+        <label for="blur">Blur</label>
+        <input type="range" name="blur" min="0" max="10" value="0" data-sizing="px">
+        <label for="invert">Invert</label>
+        <input type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+        <label for="brightness">Brightness</label>
+        <input type="range" name="brightness" min="0" max="200" value="100" data-sizing="%">
+        <label for="contrast">Contrast</label>
+        <input type="range" name="contrast" min="0" max="200" value="100" data-sizing="%">
+        <label for="saturation">Saturation</label>
+        <input type="range" name="saturation" min="0" max="200" value="100" data-sizing="%">
+        <label for="sepia">Sepia</label>
+        <input type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+      </div>
+      <div class="photo-box">
+        <img src="./assets/images/image-1.jpg" alt="image" class="photo">
+        <ul class="presets">
+          <li class="preset">
+            <img src="./assets/images/image-1.jpg" alt="normal preset" class="preset-img">
+            <p class="preset-title">Normal</p>
+          </li>
+          <li class="preset">
+            <img src="./assets/images/image-1.jpg" alt="normal preset" class="preset-img">
+            <p class="preset-title">Normal</p>
+          </li>
+          <li class="preset">
+            <img src="./assets/images/image-1.jpg" alt="normal preset" class="preset-img">
+            <p class="preset-title">Normal</p>
+          </li>
+          <li class="preset">
+            <img src="./assets/images/image-1.jpg" alt="normal preset" class="preset-img">
+            <p class="preset-title">Normal</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+      </div>
+    </div>
+  </footer>
   <script src="./js/main.js"></script>
 </body>
 </html>
