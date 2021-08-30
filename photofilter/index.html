@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/favicon.svg" rel="shortcut icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>JS30 - Photofilter</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <h1 class="title">JS30 - Photofilter</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="main container">
+    <div class="main__inner">
+      <div class="settings">
+        <label for="brightness">Brightness</label>
+        <input type="range" id="brightness" name="brightness" min="0" max="200" value="100" data-sizing="%">
+        <label for="contrast">Contrast</label>
+        <input type="range" id="contrast" name="contrast" min="0" max="200" value="100" data-sizing="%">
+        <label for="blur">Blur</label>
+        <input type="range" id="blur" name="blur" min="0" max="10" value="0" data-sizing="px">
+        <label for="hue-rotate">Hue</label>
+        <input type="range" id="hue-rotate" name="hue-rotate" min="0" max="360" value="0" data-sizing="deg">
+        <label for="saturate">Saturation</label>
+        <input type="range" id="saturate" name="saturate" min="0" max="200" value="100" data-sizing="%">
+        <label for="grayscale">Grayscale</label>
+        <input type="range" id="grayscale" name="grayscale" min="0" max="100" value="0" data-sizing="%">
+        <label for="sepia">Sepia</label>
+        <input type="range" id="sepia" name="sepia" min="0" max="100" value="0" data-sizing="%">
+        <label for="opacity">Opacity</label>
+        <input type="range" id="opacity" name="opacity" min="0" max="100" value="100" data-sizing="%">
+        <label for="invert">Invert</label>
+        <input type="range" id="invert" name="invert" min="0" max="100" value="0" data-sizing="%">
+        <label for="spacing">Spacing</label>
+        <input type="range" id="spacing" name="spacing" min="0" max="50" value="5" data-sizing="px">
+        <div class="colors">
+          <label for="main-color">Main Color</label>
+          <input id="main-color" type="color" name="base" value="#f7d5bc">
+          <label for="extra-color">Extra Color</label>
+          <input id="extra-color" type="color" name="extra" value="#f7ead1">
+        </div>
+        <div class="btn btn-reset">Reset filters</div>
+      </div>
+      <div class="photo-box">
+        <img src="./assets/images/image-1.jpg" alt="image" class="photo">
+      </div>
+    </div>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+</html>
