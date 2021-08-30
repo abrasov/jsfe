@@ -4,6 +4,8 @@
   --bg-color-extra:#f7ead1;
   --bg-color-second: #f7d5bc;
 
+  --spacing: 5px;
+
   --blur: 0px;
   --brightness: 100%;
   --contrast: 100%;
@@ -44,7 +46,7 @@ ul {
   padding: 0 20px;
 }
 .header {
-  background-color: var(--bg-color-extra);
+  background: linear-gradient(to bottom, var(--bg-color-second),var(--bg-color-extra));
 }
 .header__inner {
   display: flex;
@@ -70,7 +72,7 @@ input {
   height: 3px;
   margin: 15px 0 20px;
   appearance: none;
-  background-color: var(--bg-color-extra);
+  background: linear-gradient(to left, var(--bg-color-second),var(--bg-color-extra));
   outline: none;
   cursor: pointer;
 }
@@ -91,16 +93,17 @@ input::-webkit-slider-thumb {
   transition: all 0.3s;
 }
 .btn:hover {
-  background-color: var(--bg-color-extra);
+  background: radial-gradient(circle,var(--bg-color-extra), var(--bg-color-second));
 }
 .btn-reset {
   width: 100%;
 }
 .photo-box {
+ background: radial-gradient(circle, var(--bg-color-second),var(--bg-color-extra));
 }
 .photo {
+  padding: var(--spacing);
   max-width: 900px;
   max-height: 675px;
-  margin-bottom: 20px;
   filter: brightness(var(--brightness)) contrast(var(--contrast)) blur(var(--blur)) hue-rotate(var(--hue-rotate)) saturate(var(--saturate)) grayscale(var(--grayscale)) sepia(var(--sepia)) opacity(var(--opacity)) invert(var(--invert));
 }
