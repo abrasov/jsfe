@@ -17,3 +17,10 @@ filters.forEach((filter) => filter.addEventListener('change', handleUpdate));
 filters.forEach((filter) => filter.addEventListener('mousemove', handleUpdate));
 
 resetBtn.addEventListener('click', (resetFilters));
+console.log(`
+Общая оценка: 30
+Повторить исходный проект +10
+Обязательный дополнительный фукционал +10
+Дополнительный фукционал:
+Добавлена Кнопка сброса фильтров +10
+`)
