@@ -68,6 +68,20 @@ input {
   width: 300px;
   margin-bottom: 20px;
 }
+.btn {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--bg-color-main);
+  border: 3px solid var(--bg-color-extra);
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: var(--bg-color-extra);
+}
+.btn-reset {
+  width: 100%;
+}
 .photo-box {
   display: flex;
   flex-direction: column;
