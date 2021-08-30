@@ -3,6 +3,8 @@
   --bg-color-main: #f5f5f5;
   --bg-color-extra:#f7ead1;
   --bg-color-second: #f7d5bc;
+  --base: #f7d5bc;
+  --extra: #f7ead1;
 
   --spacing: 5px;
 
@@ -15,6 +17,9 @@
   --sepia: 0%;
   --opacity: 100%;
   --invert: 0%;
+}
+::selection {
+  background-color: #eeb2b9;
 }
 html {
   box-sizing: border-box;
@@ -76,6 +81,10 @@ input {
   outline: none;
   cursor: pointer;
 }
+input[type=color] {
+  width: 27px;
+  height: 30px;
+}
 input::-webkit-slider-thumb {
   appearance: none;
   width: 15px;
@@ -99,7 +108,7 @@ input::-webkit-slider-thumb {
   width: 100%;
 }
 .photo-box {
- background: radial-gradient(circle, var(--bg-color-second),var(--bg-color-extra));
+ background: radial-gradient(circle, var(--base),var(--extra));
 }
 .photo {
   padding: var(--spacing);

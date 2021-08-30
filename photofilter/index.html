@@ -13,8 +13,6 @@
     <div class="container">
       <div class="header__inner">
         <h1 class="title">JS30 - Photofilter</h1>
-        <div class="page-settings">
-        </div>
       </div>
     </div>
   </header>
@@ -42,7 +40,12 @@
         <input type="range" id="invert" name="invert" min="0" max="100" value="0" data-sizing="%">
         <label for="spacing">Spacing</label>
         <input type="range" id="spacing" name="spacing" min="0" max="50" value="5" data-sizing="px">
-
+        <div class="colors">
+          <label for="main-color">Main Color</label>
+          <input id="main-color" type="color" name="base" value="#f7d5bc">
+          <label for="extra-color">Extra Color</label>
+          <input id="extra-color" type="color" name="extra" value="#f7ead1">
+        </div>
         <div class="btn btn-reset">Reset filters</div>
       </div>
       <div class="photo-box">
