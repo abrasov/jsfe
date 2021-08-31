@@ -108,7 +108,8 @@ input::-webkit-slider-thumb {
   width: 100%;
 }
 .photo-box {
- background: radial-gradient(circle, var(--extra),var(--base));
+  background: radial-gradient(circle, var(--extra),var(--base));
+  display: flex;
 }
 .photo {
   padding: var(--spacing);
