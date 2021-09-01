@@ -6,7 +6,7 @@
   --base: #f7d5bc;
   --extra: #f7ead1;
 
-  --spacing: 5px;
+  --spacing: 25px;
 
   --blur: 0px;
   --brightness: 100%;
@@ -108,12 +108,12 @@ input::-webkit-slider-thumb {
   width: 100%;
 }
 .photo-box {
-  background: radial-gradient(circle, var(--extra),var(--base));
   display: flex;
 }
 .photo {
   padding: var(--spacing);
   max-width: 900px;
   max-height: 675px;
+  background: radial-gradient(circle, var(--extra),var(--base));
   filter: brightness(var(--brightness)) contrast(var(--contrast)) blur(var(--blur)) hue-rotate(var(--hue-rotate)) saturate(var(--saturate)) grayscale(var(--grayscale)) sepia(var(--sepia)) opacity(var(--opacity)) invert(var(--invert));
 }
